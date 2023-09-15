@@ -1,0 +1,31 @@
+body{
+    display: grid;
+    place-content: center;
+    /* background-color:aqua; */
+}
+.testimonial-grid{
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+        'ONE ONE TWO FIVE'
+        'THREE FOUR FOUR FIVE'
+}
+.card-1{
+    grid-area: ONE;
+}
+.card-2{
+    grid-area: TWO;
+}
+.card-3{
+    grid-area: THREE;
+}
+.card-4{
+    grid-area: FOUR;
+}
+.card-5{
+    grid-area: FIVE;
+}
+.testimonial{
+    border: 2px solid black;
+    /* width: 50%; */
+}

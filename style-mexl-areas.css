@@ -145,10 +145,30 @@ h3 {
 /* components */
 .testimonial-grid {
   padding-block: 2rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-areas:
+      'ONE ONE ONE ONE '
+      'TWO THREE THREE FOUR'
+      'FIVE FIVE FIVE FIVE';
   width: min(95%, 70rem);
   margin-inline: auto;
 }
-
+.card-1{
+  grid-area: ONE;
+}
+.card-2{
+  grid-area: TWO;
+}
+.card-3{
+  grid-area: THREE;
+}
+.card-4{
+  grid-area: FOUR;
+}
+.card-5{
+  grid-area: FIVE;
+}
 .testimonial {
   font-size: var(--fs-400);
   padding: 2rem;
